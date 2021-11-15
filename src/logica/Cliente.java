@@ -6,8 +6,16 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
 @Entity
+//No permite num_cliente repetido.
+@Table(
+        name = "Cliente",
+        uniqueConstraints
+        = @UniqueConstraint(columnNames = {"num_cliente"})
+)
 public class Cliente implements Serializable {
 
     @Id
