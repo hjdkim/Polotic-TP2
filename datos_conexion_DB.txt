@@ -1,0 +1,4 @@
+Base de datos: peluqueria_canina
+URL: jdbc:mysql://localhost:3306/peluqueria_canina?serverTimezone=UTC
+user: peluquero
+password: perruqueria
